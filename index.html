@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./static/css/video_comparison.css">
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
@@ -39,6 +40,7 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+  <script src="./static/js/video_comparison.js"></script>
 </head>
 <body>
 
@@ -225,34 +227,57 @@
     <!--/ Abstract. -->
 
     <!-- Paper video. -->
-<!--     <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
+        <h2 class="title is-3"></h2>
         <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/xWsLHPlWKjA?si=aTvmUuaJFdnR30n_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+           gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </div>
-    </div> -->
+    </div>
     <!--/ Paper video. -->
   </div>
 
 
-
+  <div style="height: 5rem;"></div>
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-1"></h2>
-        <div class="content has-text-justified">
-          <p>
-          More To Come...
-          </p>
-        </div>
+    <h2 class="title is-3 has-text-centered">Video Comparisons</h2>
+
+    <div class="compare-row">
+
+      <div class="video-compare-container">
+        <video class="video" id="Vid1" loop playsinline autoplay muted onplay="resizeAndPlay(this)">
+          <source src="./static/videos/fish_FSGS.mp4" type="video/mp4">
+        </video>
+        <canvas id="Vid1Merge"></canvas>
+      </div>
+
+      <div class="video-compare-container">
+        <video class="video" id="Vid2" loop playsinline autoplay muted onplay="resizeAndPlay(this)">
+          <source src="./static/videos/veg_DNG.mp4" type="video/mp4">
+        </video>
+        <canvas id="Vid2Merge"></canvas>
+      </div>
+
+      <div class="video-compare-container">
+        <video class="video" id="Vid3" loop playsinline autoplay muted onplay="resizeAndPlay(this)">
+          <source src="./static/videos/frog_GS.mp4" type="video/mp4">
+        </video>
+        <canvas id="Vid3Merge"></canvas>
+      </div>
+
+      <div class="video-compare-container">
+        <video class="video" id="Vid4" loop playsinline autoplay muted onplay="resizeAndPlay(this)">
+          <source src="./static/videos/berry_sparseGS.mp4" type="video/mp4">
+        </video>
+        <canvas id="Vid4Merge"></canvas>
       </div>
     </div>
   </div>
-</section>
+
+
+
 
 <!-- 
 <section class="section">
