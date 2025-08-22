@@ -1,14 +1,16 @@
-# Nerfies
+# Seeing A 3D World in A Grain of Sand
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
 
-If you find Nerfies useful for your work please cite:
+
+If you find our work useful for your project please cite:
 ```
-@article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+@InProceedings{Zhang_2025_CVPR,
+    author    = {Zhang, Yufan and Ji, Yu and Guo, Yu and Ye, Jinwei},
+    title     = {Seeing A 3D World in A Grain of Sand},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {11187-11196}
 }
 ```
 
